@@ -1,1 +1,4 @@
 /UsIndex/settings.py
+
+# Static folder at project root
+/static/
