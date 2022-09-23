@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta charset="UTF-8">
+  {% block head %}
+  {% endblock %}
+</head>
+
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a href="{% url 'home' %}"class="w3-bar-item w3-button"><b>My</b> Homepage</a>
+        <!-- Float links to the right. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+          <a href="{% url 'home' %}#projects" class="w3-bar-item w3-button">Charts</a>
+          <a href="{% url 'home' %}#about" class="w3-bar-item w3-button">About</a>
+          <a href="{% url 'home' %}#contact" class="w3-bar-item w3-button">Contact</a>
+        </div>
+      </div>
+    </div>
+    {% block title %}
+    {% endblock %}
+    {% block content %}
+    {% endblock %}
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-16">
+      <p>Developed By Xiao Zixuan</p>
+    </footer>
+</body>

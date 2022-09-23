@@ -1,0 +1,79 @@
+{% extends 'us_index_dashboard/base.html' %}
+{% load static %}
+
+{% block head %}
+    <title>home</title>
+{% endblock %}
+
+{% block content %}
+  
+  <!-- Header -->
+  <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+    <img class="w3-image" src="{% static 'us_index_dashboard/media/Cavan_Images_Offset.jpeg' %}" alt="Architecture" width="1500" height="800">
+    <div class="w3-display-middle w3-margin-top w3-center">
+      <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Data</b></span> <span class="w3-hide-small w3-text-light-grey">Visualization</span></h1>
+    </div>
+  </header>
+  
+  <!-- Page content -->
+  <div class="w3-content w3-padding" style="max-width:1564px">
+  
+    <!-- Project Section -->
+    <div class="w3-container w3-padding-32" id="projects">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Charts</h3>
+    </div>
+  
+    <div class="w3-row-padding">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding"><a href="{% url 'dji_chart' %}">DJI(点这个)</a></div>
+          <img src="{% static 'us_index_dashboard/media/being4.jpeg' %}" alt="House" style="width:100%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">IXIC(待补充)</div>
+          <img src="{% static 'us_index_dashboard/media/being5.jpeg' %}" alt="House" style="width:100%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding">NDX(待补充)</div>
+          <img src="{% static 'us_index_dashboard/media/being2.jpeg' %}" alt="House" style="width:100%">
+        </div>
+      </div>
+    </div>
+  
+    
+  
+    <!-- About Section -->
+    <div class="w3-container w3-padding-32" id="about">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+      <p>在这里放介绍。
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+  
+  
+    <!-- Contact Section -->
+    <div class="w3-container w3-padding-32" id="contact">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+      <p>Lets get in touch and talk about your next project.</p>
+      <form action="/action_page.php" target="_blank">
+        <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+        <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+        <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+        <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+        <button class="w3-button w3-black w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> 别点
+        </button>
+      </form>
+    </div>
+    
+
+  <!-- End page content -->
+  </div>
+
+{% endblock %}
