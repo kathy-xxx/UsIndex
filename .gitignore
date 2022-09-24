@@ -2,3 +2,6 @@
 
 # Static folder at project root
 /static/
+
+# Ignore Mac system files
+.DS_store
